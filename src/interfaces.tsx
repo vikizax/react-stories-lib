@@ -6,8 +6,8 @@ export interface ReactInstaStoriesProps {
   height?: NumberOrString;
   loader?: JSX.Element;
   header?: Function;
-  storyContainerStyles?: Record<string, any>;
-  storyStyles?: Object;
+  storyContainerStyles?: React.CSSProperties;
+  storyStyles?: React.CSSProperties;
   loop?: boolean;
   defaultInterval?: number;
   isPaused?: boolean;
@@ -21,7 +21,7 @@ export interface ReactInstaStoriesProps {
   onStoryEnd?: Function;
   keyboardNavigation?: boolean;
   preventDefault?: boolean;
-  spinnerContainerStyle: Record<string, any>;
+  spinnerContainerStyle: React.CSSProperties;
   closeCallback?: Function;
   closeIconStyle?: React.CSSProperties;
   closeIconContainerStyle?: React.CSSProperties;
@@ -32,8 +32,8 @@ export interface GlobalCtx {
   height?: NumberOrString;
   loader?: JSX.Element;
   header?: Function;
-  storyContainerStyles?: Record<string, any>;
-  storyStyles?: Object;
+  storyContainerStyles?: React.CSSProperties;
+  storyStyles?: React.CSSProperties;
   loop?: boolean;
   defaultInterval?: number;
   isPaused?: boolean;
@@ -47,7 +47,7 @@ export interface GlobalCtx {
   onStoryEnd?: Function;
   keyboardNavigation?: boolean;
   preventDefault?: boolean;
-  spinnerContainerStyle?: Record<string, any>;
+  spinnerContainerStyle?: React.CSSProperties;
   closeCallback?: Function;
   closeIconStyle?: React.CSSProperties;
   closeIconContainerStyle?: React.CSSProperties;
