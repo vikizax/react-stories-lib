@@ -37,6 +37,11 @@ function App() {
 const stories2 = [
   {
     url: "https://picsum.photos/1080/1920",
+    header: {
+      heading: "Lorem ipsum dolor sit amet consectetur",
+      subheading: "adipisicing elit lorem Lorem ipsum dolor sit amet",
+      profileImage: "https://picsum.photos/100/100",
+    },
   },
   {
     url:
