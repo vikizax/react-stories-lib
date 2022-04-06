@@ -21,6 +21,7 @@ function App() {
           width: "100%",
           display: "flex",
           justifyContent: "center",
+          objectFit: 'cover'
         }}
         spinnerContainerStyle={{
           height: "100%",
@@ -35,18 +36,18 @@ function App() {
 }
 
 const stories2 = [
-  {
-    url: "https://picsum.photos/1080/1920",
-    header: {
-      heading: "Lorem ipsum dolor sit amet consectetur",
-      subheading: "adipisicing elit lorem Lorem ipsum dolor sit amet",
-      profileImage: "https://picsum.photos/100/100",
-    },
-  },
+  // {
+  //   url: "https://picsum.photos/1080/1920",
+  //   header: {
+  //     heading: "Lorem ipsum dolor sit amet consectetur",
+  //     subheading: "adipisicing elit lorem Lorem ipsum dolor sit amet",
+  //     profileImage: "https://picsum.photos/100/100",
+  //   },
+  // },
   {
     url:
-      "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
-    type: "video",
+      "https://api.vistory.in/assets/images/stories/Story_Jeetendra_002.jpg",
+
   },
 ];
 

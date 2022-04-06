@@ -19,7 +19,10 @@ export const renderer: Renderer = ({ story, action, isPaused, config, spinnerCon
 
     return <WithHeader story={story} globalHeader={config.header}>
         <WithSeeMore story={story} action={action}>
-            <div>
+            <div style={{
+                height: '100%',
+                width: 'auto',
+            }}>
                 <img style={computedStyles} src={story.url} onLoad={imageLoaded} />
                 {!loaded && (
                     <div
@@ -53,9 +56,6 @@ const styles = {
         overflow: "hidden"
     },
     storyContent: {
-        width: "auto",
-        maxWidth: "100%",
-        maxHeight: "100%",
         margin: "auto"
     }
 };
