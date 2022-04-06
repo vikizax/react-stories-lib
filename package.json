@@ -1,6 +1,6 @@
 {
 	"name": "react-stories-lib",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "A React component for Instagram like stories",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
