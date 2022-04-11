@@ -25,6 +25,7 @@ export interface ReactInstaStoriesProps {
   closeCallback?: Function;
   closeIconStyle?: React.CSSProperties;
   closeIconContainerStyle?: React.CSSProperties;
+  textContainerStyle?: React.CSSProperties;
 }
 
 export interface GlobalCtx {
@@ -48,6 +49,7 @@ export interface GlobalCtx {
   keyboardNavigation?: boolean;
   preventDefault?: boolean;
   spinnerContainerStyle?: React.CSSProperties;
+  textContainerStyle?: React.CSSProperties;
   closeCallback?: Function;
   closeIconStyle?: React.CSSProperties;
   closeIconContainerStyle?: React.CSSProperties;
@@ -81,6 +83,7 @@ export interface Renderer
     };
     spinnerContainerStyle?: Record<string, any>;
     messageHandler: (type: string, data: any) => { ack: "OK" | "ERROR" };
+    textContainerStyle?:React.CSSProperties;
   }> {}
 
 export type Tester = (

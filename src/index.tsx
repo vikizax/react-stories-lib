@@ -29,7 +29,8 @@ const ReactInstaStories = function (props: ReactInstaStoriesProps) {
         spinnerContainerStyle: props.spinnerContainerStyle,
         closeCallback: props.closeCallback,
         closeIconContainerStyle: props.closeIconContainerStyle,
-        closeIconStyle: props.closeIconStyle
+        closeIconStyle: props.closeIconStyle,
+        textContainerStyle: props.textContainerStyle
     }
     const [stories, setStories] = useState<{ stories: Story[] }>({ stories: generateStories(props.stories, renderers) });
     useEffect(() => {

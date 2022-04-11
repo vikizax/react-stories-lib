@@ -11,6 +11,7 @@ export const renderer: Renderer = ({
   config,
   messageHandler,
   spinnerContainerStyle,
+  textContainerStyle,
 }) => {
   const [loaded, setLoaded] = React.useState(false);
   const [muted, setMuted] = React.useState(false);
@@ -58,7 +59,11 @@ export const renderer: Renderer = ({
   };
 
   return (
-    <WithHeader story={story} globalHeader={config.header}>
+    <WithHeader
+      story={story}
+      globalHeader={config.header}
+      textContainerStyle={textContainerStyle}
+    >
       <WithSeeMore story={story} action={action}>
         <div style={styles.videoContainer}>
           <video

@@ -21,7 +21,7 @@ function App() {
           width: "100%",
           display: "flex",
           justifyContent: "center",
-          objectFit: 'cover'
+          objectFit: "cover",
         }}
         spinnerContainerStyle={{
           height: "100%",
@@ -29,6 +29,9 @@ function App() {
         }}
         closeCallback={() => {
           console.log("clicked");
+        }}
+        textContainerStyle={{
+          height: "350px",
         }}
       />
     </div>
@@ -45,9 +48,10 @@ const stories2 = [
   //   },
   // },
   {
-    url:
-      "https://api.vistory.in/assets/images/stories/Story_Jeetendra_002.jpg",
-
+    url: "https://api.vistory.in/assets/images/stories/Story_Jeetendra_002.jpg",
+    header: {
+      heading: "Loren Ispum dolar",
+    },
   },
 ];
 

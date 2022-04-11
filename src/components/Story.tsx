@@ -12,6 +12,7 @@ const Story = (props: StoryProps) => {
     header,
     storyStyles,
     spinnerContainerStyle,
+    textContainerStyle,
   } = globalContext;
 
   const rendererMessageHandler = (type: string, data: any) => {
@@ -33,6 +34,7 @@ const Story = (props: StoryProps) => {
         config={config}
         spinnerContainerStyle={spinnerContainerStyle}
         messageHandler={rendererMessageHandler}
+        textContainerStyle={textContainerStyle}
       />
     );
   };
