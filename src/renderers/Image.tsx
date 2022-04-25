@@ -11,8 +11,8 @@ export const renderer: Renderer = ({
   config,
   spinnerContainerStyle,
   textContainerStyle,
+  showLoader,
 }) => {
-
   const [loaded, setLoaded] = React.useState(false);
   const { width, height, loader, storyStyles } = config;
   let computedStyles = {
@@ -38,8 +38,30 @@ export const renderer: Renderer = ({
             width: "auto",
           }}
         >
-          <img style={computedStyles} src={story.url} onLoad={imageLoaded} />
-          {!loaded && (
+          {!showLoader && (
+            <img style={computedStyles} src={story.url} onLoad={imageLoaded} />
+          )}
+          {showLoader && (
+            <div
+              style={{
+                width: width,
+                height: height,
+                position: "absolute",
+                left: 0,
+                top: 0,
+                background: "rgba(0, 0, 0, 0.9)",
+                zIndex: 9,
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "#ccc",
+                ...spinnerContainerStyle,
+              }}
+            >
+              {loader || <Spinner />}
+            </div>
+          )}
+          {!loaded && !showLoader && (
             <div
               style={{
                 width: width,

@@ -10,6 +10,7 @@ const Story = (props: StoryProps) => {
     height,
     loader,
     header,
+    showLoader,
     storyStyles,
     spinnerContainerStyle,
     textContainerStyle,
@@ -35,6 +36,7 @@ const Story = (props: StoryProps) => {
         spinnerContainerStyle={spinnerContainerStyle}
         messageHandler={rendererMessageHandler}
         textContainerStyle={textContainerStyle}
+        showLoader={showLoader}
       />
     );
   };

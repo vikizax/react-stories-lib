@@ -5,6 +5,7 @@ export interface ReactInstaStoriesProps {
   width?: NumberOrString;
   height?: NumberOrString;
   loader?: JSX.Element;
+  showLoader?: boolean;
   header?: Function;
   storyContainerStyles?: React.CSSProperties;
   storyStyles?: React.CSSProperties;
@@ -32,6 +33,7 @@ export interface GlobalCtx {
   width?: NumberOrString;
   height?: NumberOrString;
   loader?: JSX.Element;
+  showLoader?: boolean;
   header?: Function;
   storyContainerStyles?: React.CSSProperties;
   storyStyles?: React.CSSProperties;
@@ -74,6 +76,7 @@ export interface Renderer
     action: Action;
     isPaused: boolean;
     story: Story;
+    showLoader?: boolean;
     config: {
       width?: NumberOrString;
       height?: NumberOrString;
@@ -83,7 +86,7 @@ export interface Renderer
     };
     spinnerContainerStyle?: Record<string, any>;
     messageHandler: (type: string, data: any) => { ack: "OK" | "ERROR" };
-    textContainerStyle?:React.CSSProperties;
+    textContainerStyle?: React.CSSProperties;
   }> {}
 
 export type Tester = (

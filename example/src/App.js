@@ -33,6 +33,7 @@ function App() {
         textContainerStyle={{
           height: "350px",
         }}
+        showLoader={true}
       />
     </div>
   );
